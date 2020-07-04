@@ -1,3 +1,5 @@
+#Displaying exposure using lsst pipelines
+
 import lsst.daf.persistence as dafPersist
 import lsst.afw.display as afwDisplay
 butler = dafPersist.Butler(inputs='/home/adriel/DATA/rerun/processCcdOutputs')
