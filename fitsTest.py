@@ -13,6 +13,8 @@ biasImage = fitsBias[0].data
 image = image[0:4176,0:2048]#making images same size...(hacky i know. I don't even know if these images correspond to each other)
 print(image.shape)
 print(biasImage.shape)
+
+#OPTIMIZE exactly this with python CUDA and compare speed up times!
 biasCorr = image - biasImage
 fits[1].data = biasCorr
 
